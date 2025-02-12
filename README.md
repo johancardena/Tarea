@@ -1,6 +1,10 @@
 UN PEQUEÑO INFORME :)
 [TRABAJO EXTRA DE POO.docx](https://github.com/user-attachments/files/18773121/TRABAJO.EXTRA.DE.POO.docx)
-Aquí agrego los script  de la base para que pueda ser probada TAMBNIEN ESTA EN EL INFORME AQUI SE DATOS TIPO JSON
+
+Aquí agrego los script  de la base para que pueda ser probada TAMBIEN ESTA EN EL INFORME AQUI SE USO DATOS TIPO JSON
+
+
+
 ESTE ES UN USUARIO:
 {
   "_id": {

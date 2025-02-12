@@ -15,7 +15,11 @@ ESTE ES UN USUARIO:
   "email": "juanperez@example.com",
   "password": "12345"
 }
+
+
 ESTE ES UN ALQUILER REGISTRADO:
+
+
 {
   "_id": {
     "$oid": "67ac208f5a12c61abe5fcb15"

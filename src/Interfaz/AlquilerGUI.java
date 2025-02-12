@@ -48,7 +48,7 @@ public class AlquilerGUI {
 
                 if (alquilerDAO.agregarAlquiler(cliente, vehiculo, fechaInicio, fechaFin)) {
                     cargarAlquileres();
-                    JOptionPane.showMessageDialog(null, ":) Clases.Alquiler agregado");
+                    JOptionPane.showMessageDialog(null, ":) Alquiler agregado");
                 } else {
                     JOptionPane.showMessageDialog(null, ":( Error al agregar alquiler");
                 }
@@ -63,7 +63,7 @@ public class AlquilerGUI {
                     String cliente = model.getValueAt(row, 0).toString();
                     if (alquilerDAO.eliminarAlquiler(cliente)) {
                         cargarAlquileres();
-                        JOptionPane.showMessageDialog(null, ":) Clases.Alquiler eliminado");
+                        JOptionPane.showMessageDialog(null, ":) Alquiler eliminado");
                     } else {
                         JOptionPane.showMessageDialog(null, "Error al eliminar");
                     }
@@ -86,7 +86,7 @@ public class AlquilerGUI {
 
                     if (alquilerDAO.actualizarAlquiler(alquilerSeleccionado)) {
                         cargarAlquileres();
-                        JOptionPane.showMessageDialog(null, " :) Clases.Alquiler actualizado");
+                        JOptionPane.showMessageDialog(null, " :) Alquiler actualizado");
                     } else {
                         JOptionPane.showMessageDialog(null, " :( Error al actualizar alquiler");
                     }

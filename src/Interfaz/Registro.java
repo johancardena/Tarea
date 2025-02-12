@@ -1,3 +1,7 @@
+package Interfaz;
+
+import Clases.UsuarioDAO;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,3 +1,8 @@
+package Interfaz;
+
+import Clases.Alquiler;
+import Clases.Alquilerr;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
@@ -43,7 +48,7 @@ public class AlquilerGUI {
 
                 if (alquilerDAO.agregarAlquiler(cliente, vehiculo, fechaInicio, fechaFin)) {
                     cargarAlquileres();
-                    JOptionPane.showMessageDialog(null, ":) Alquiler agregado");
+                    JOptionPane.showMessageDialog(null, ":) Clases.Alquiler agregado");
                 } else {
                     JOptionPane.showMessageDialog(null, ":( Error al agregar alquiler");
                 }
@@ -58,7 +63,7 @@ public class AlquilerGUI {
                     String cliente = model.getValueAt(row, 0).toString();
                     if (alquilerDAO.eliminarAlquiler(cliente)) {
                         cargarAlquileres();
-                        JOptionPane.showMessageDialog(null, ":) Alquiler eliminado");
+                        JOptionPane.showMessageDialog(null, ":) Clases.Alquiler eliminado");
                     } else {
                         JOptionPane.showMessageDialog(null, "Error al eliminar");
                     }
@@ -76,12 +81,12 @@ public class AlquilerGUI {
                     String fechaInicio = fechaInicioField.getText();
                     String fechaFin = fechaFinField.getText();
 
-                    // Crear el objeto Alquiler para actualizar
+                    // Crear el objeto Clases.Alquiler para actualizar
                     Alquiler alquilerSeleccionado = new Alquiler(cliente, vehiculo, fechaInicio, fechaFin);
 
                     if (alquilerDAO.actualizarAlquiler(alquilerSeleccionado)) {
                         cargarAlquileres();
-                        JOptionPane.showMessageDialog(null, " :) Alquiler actualizado");
+                        JOptionPane.showMessageDialog(null, " :) Clases.Alquiler actualizado");
                     } else {
                         JOptionPane.showMessageDialog(null, " :( Error al actualizar alquiler");
                     }

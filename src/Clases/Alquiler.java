@@ -1,3 +1,5 @@
+package Clases;
+
 public class Alquiler {
     private String cliente;
     private String vehiculo;

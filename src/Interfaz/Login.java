@@ -1,6 +1,6 @@
 package Interfaz;
 
-import Clases.UsuarioDAO;
+import Clases.Usuario;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -19,7 +19,7 @@ public class Login extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String email = emailField.getText();
                 String password = new String(passwordField.getPassword());
-                UsuarioDAO usuarioDAO = new UsuarioDAO();
+                Usuario usuarioDAO = new Usuario();
                 if (!email.contains("@")) {
                     JOptionPane.showMessageDialog(null, "El correo debe contener '@'.", "Error", JOptionPane.WARNING_MESSAGE);
                     return;

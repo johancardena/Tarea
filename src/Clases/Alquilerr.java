@@ -18,7 +18,6 @@ public class Alquilerr {
         this.alquileres = database.getCollection("alquileres");
     }
 
-    // Agregar un nuevo alquiler
     public boolean agregarAlquiler(String cliente, String vehiculo, String fechaInicio, String fechaFin) {
         Document nuevoAlquiler = new Document("cliente", cliente)
                 .append("vehiculo", vehiculo)
@@ -28,12 +27,10 @@ public class Alquilerr {
         return true;
     }
 
-    // Eliminar un alquiler basado en el cliente
     public boolean eliminarAlquiler(String cliente) {
         return alquileres.deleteOne(eq("cliente", cliente)).getDeletedCount() > 0;
     }
 
-    // Obtener todos los alquileres
     public List<Alquiler> obtenerAlquileres() {
         List<Alquiler> lista = new ArrayList<>();
         for (Document doc : alquileres.find()) {
@@ -47,17 +44,12 @@ public class Alquilerr {
         return lista;
     }
 
-    // Actualizar un alquiler basado en el cliente
     public boolean actualizarAlquiler(Alquiler alquilerSeleccionado) {
-        // Crear un filtro para buscar el alquiler por cliente
         Document filtro = new Document("cliente", alquilerSeleccionado.getCliente());
 
-        // Crear un documento con los nuevos valores a actualizar
         Document nuevosDatos = new Document("vehiculo", alquilerSeleccionado.getVehiculo())
                 .append("fechaInicio", alquilerSeleccionado.getFechaInicio())
                 .append("fechaFin", alquilerSeleccionado.getFechaFin());
-
-        // Realizar la actualización
         return alquileres.updateOne(filtro, new Document("$set", nuevosDatos)).getModifiedCount() > 0;
     }
 }

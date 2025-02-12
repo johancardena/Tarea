@@ -1,6 +1,6 @@
 package Interfaz;
 
-import Clases.UsuarioDAO;
+import Clases.Usuario;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -20,7 +20,7 @@ public class Registro extends JFrame{
                 String nombre = nombreField.getText();
                 String email = emailField.getText();
                 String password = new String(passwordField.getPassword());
-                UsuarioDAO usuarioDAO = new UsuarioDAO();
+                Usuario usuarioDAO = new Usuario();
 
                 // Validación: Verificar que el correo contenga '@'
                 if (!email.contains("@")) {

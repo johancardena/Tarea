@@ -5,10 +5,10 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import static com.mongodb.client.model.Filters.eq;
 
-public class UsuarioDAO {
+public class Usuario {
     private final MongoCollection<Document> usuarios;
 
-    public UsuarioDAO() {
+    public Usuario() {
         MongoDatabase database = ConexionMongoDB.getDatabase();
         this.usuarios = database.getCollection("usuarios");
     }

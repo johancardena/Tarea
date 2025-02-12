@@ -8,7 +8,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class AlquilerGUI {
+public class AlquilerInterfaz {
     public JPanel panelAlquiler;
     private JTextField clienteField;
     private JTextField vehiculoField;
@@ -22,7 +22,7 @@ public class AlquilerGUI {
     private Alquilerr alquilerDAO;
     private DefaultTableModel model;
 
-    public AlquilerGUI() {
+    public AlquilerInterfaz() {
         alquilerDAO = new Alquilerr();
         model = new DefaultTableModel(new String[]{"Cliente", "Vehículo", "Inicio", "Fin"}, 0);
         alquilerTable.setModel(model);

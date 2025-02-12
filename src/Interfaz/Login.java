@@ -28,7 +28,7 @@ public class Login extends JFrame {
                     JOptionPane.showMessageDialog(null, " :) Login exitoso");
 
                     JFrame alquilerFrame = new JFrame("Gestión de Alquileres");
-                    alquilerFrame.setContentPane(new AlquilerGUI().panelAlquiler);
+                    alquilerFrame.setContentPane(new AlquilerInterfaz().panelAlquiler);
                     alquilerFrame.setSize(400, 400);
                     alquilerFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     alquilerFrame.setLocationRelativeTo(null);

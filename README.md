@@ -6,6 +6,7 @@ Aquí agrego los script  de la base para que pueda ser probada TAMBIEN ESTA EN E
 
 
 ESTE ES UN USUARIO:
+
 {
   "_id": {
     "$oid": "67abf49abdc43d68cd598c0e"
@@ -24,6 +25,8 @@ ESTE ES UN ALQUILER REGISTRADO:
   "fechaInicio": "2025-02-13",
   "fechaFin": "2025-02-19"
 }
+
+
 
 ![image](https://github.com/user-attachments/assets/a24853c6-5024-4732-9d8c-762412165331)
 ![image](https://github.com/user-attachments/assets/1464cb7b-3326-4ee2-8d6c-3dd5e7673afc)

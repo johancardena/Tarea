@@ -17,7 +17,7 @@ public class Login extends JFrame {
                 String password = new String(passwordField.getPassword());
                 UsuarioDAO usuarioDAO = new UsuarioDAO();
                 if (!email.contains("@")) {
-                    JOptionPane.showMessageDialog(null, "⚠️ El correo debe contener '@'.", "Error", JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "El correo debe contener '@'.", "Error", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
                 if (usuarioDAO.loginUsuario(email, password)) {
